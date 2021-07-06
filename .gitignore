@@ -2,6 +2,9 @@
 CVs-spectros/*.jpg
 CVs-spectros/*.pdf
 CVs-spectros/*.json
+CVs-spectros/*catB.dat
+.ipynb_checkpoints
 *~
 /*#
 \*#
+*.gz
