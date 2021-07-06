@@ -1,0 +1,23 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: IDsdss, datatype: string}
+# - {name: ID, datatype: string}
+# - {name: RA, datatype: float64}
+# - {name: DEC, datatype: float64}
+# - {name: U, datatype: float64}
+# - {name: F378, datatype: float64}
+# - {name: F395, datatype: float64}
+# - {name: F410, datatype: float64}
+# - {name: F430, datatype: float64}
+# - {name: G, datatype: float64}
+# - {name: F515, datatype: float64}
+# - {name: R, datatype: float64}
+# - {name: F660, datatype: float64}
+# - {name: I, datatype: float64}
+# - {name: F861, datatype: float64}
+# - {name: Z, datatype: float64}
+# meta: {name: first table}
+# schema: astropy-2.0
+IDsdss ID RA DEC U F378 F395 F410 F430 G F515 R F660 I F861 Z
+spec-2212-53789-0201 SDSSJ1662456.52+250628.6 166.4157 25.107953 17.826190948486328 17.841346740722656 17.712200164794922 17.699970245361328 17.62014389038086 17.56450653076172 17.447866439819336 17.504117965698242 17.457752227783203 16.8337459564209 16.404878616333008 16.282970428466797

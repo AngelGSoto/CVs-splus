@@ -1,0 +1,7 @@
+*.fits
+CVs-spectros/*.jpg
+CVs-spectros/*.pdf
+CVs-spectros/*.json
+*~
+/*#
+\*#
