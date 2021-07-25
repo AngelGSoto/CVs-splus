@@ -7,3 +7,6 @@
 #+STARTUP: hidestars
 
 * Cataclysm variables
+This projects is being developed in collaboration.
+
+
