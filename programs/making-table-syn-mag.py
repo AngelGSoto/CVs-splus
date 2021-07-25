@@ -22,11 +22,11 @@ import seaborn as sn
 sn.set_context("poster")
 
 # Read FITS files
-pattern = "*-spectros/*.fits"
+pattern = "CVs-spectros/*.fits"
 file_fits = glob.glob(pattern)
 
 # Read JSON files
-pattern1 = "*-spectros/*-SPLUS21-magnitude.json"
+pattern1 = "CVs-spectros/*-SPLUS21-magnitude.json"
 file_list = glob.glob(pattern1)
 
 shape1 = (len(file_fits), 4)
@@ -36,7 +36,7 @@ for name_fit in file_fits:
     inffits.append(name_fit.split("s/")[-1].split(".fit")[0])
     hdulist = fits.open(name_fit)
     c = SkyCoord(ra=float(hdulist[1].header["RAOBJ"])*u.degree, dec=float(hdulist[1].header["DECOBJ"])*u.degree) 
-    inffits.append('SDSSJ{0}{1}'.format(c.ra.to_string(sep='', precision=2, pad=True), c.dec.to_string(sep='', precision=1, alwayssign=True)))
+    inffits.append('SDSSJ{0}{1}'.format(c.ra.to_string(u.hour, sep='', precision=2, pad=True), c.dec.to_string(sep='', precision=1, alwayssign=True, pad=True)))
     inffits.append(float(hdulist[1].header["RAOBJ"]))
     inffits.append(float(hdulist[1].header["DECOBJ"]))
 
@@ -84,5 +84,7 @@ t2['DEC'] = t1['DEC']
 # Order of the columns of the tables
 table_new = t2[new_order]
 
+# table_new.write("catKoji_confirmed_coordDeg_splusMag.ecsv", format="ascii.ecsv", overwrite=True)
+# table_new.write("catKoji_confirmed_coordDeg_splusMag.fits", format="fits", overwrite=True)
 table_new.write("CV-synthetic-mag-splus.ecsv", format="ascii.ecsv", overwrite=True)
 table_new.write("CV-synthetic-mag-splus.fits", format="fits", overwrite=True)

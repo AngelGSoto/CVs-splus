@@ -111,7 +111,7 @@ factor = flux_part / Fsp
 
 # SDSS ID
 c = SkyCoord(ra=float(ra)*u.degree, dec=float(dec)*u.degree) 
-idsdss = 'SDSSJ{0}{1}'.format(c.ra.to_string(sep='', precision=2, pad=True), c.dec.to_string(sep='', precision=1, alwayssign=True))
+idsdss = 'SDSSJ{0}{1}'.format(c.ra.to_string(u.hour, sep='', precision=2, pad=True), c.dec.to_string(sep='', precision=1, alwayssign=True, pad=True))
 print(idsdss)
 
 # PLOTS
