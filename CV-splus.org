@@ -1,0 +1,9 @@
+#+TITLE: Topic: CV-splus
+#+AUTHOR: Luis A. Gutiérrez Soto
+#+EMAIL: gsoto.angel@gmail.con
+#+DESCRIPTION: An example of file for learning
+#+CATEGORY: Presentation
+#+STARTUP: overview
+#+STARTUP: hidestars
+
+* Cataclysm variables
